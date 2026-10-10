@@ -123,10 +123,10 @@ function UploadFlyerContent() {
 
   return (
     <div
-      className="min-h-screen bg-slate-100 text-slate-900 pb-16 antialiased"
+      className="min-h-screen bg-slate-100 text-slate-900 pb-20 antialiased"
       style={{ backgroundColor: "#f1f5f9" }}
     >
-      <main className="max-w-md mx-auto px-4 pt-6">
+      <main className="max-w-xl mx-auto px-4 sm:px-6 pt-6 sm:pt-10">
         {/* Navigation bar */}
         <div className="flex items-center justify-between mb-5">
           <Link

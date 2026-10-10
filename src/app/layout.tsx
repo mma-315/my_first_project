@@ -1,5 +1,18 @@
 import type { Metadata, Viewport } from "next";
+import { Fraunces, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-serif",
+  display: "swap",
+});
+
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Bolton Caterers | Fresh Menus & Flyers",
@@ -9,8 +22,9 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
-  themeColor: "#f1f5f9",
+  maximumScale: 5,
+  userScalable: true,
+  themeColor: "#EEF2F6",
 };
 
 export default function RootLayout({
@@ -19,11 +33,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full bg-slate-100" style={{ backgroundColor: "#f1f5f9" }}>
-      <body
-        className="min-h-full bg-slate-100 text-slate-900 antialiased selection:bg-amber-200"
-        style={{ backgroundColor: "#f1f5f9" }}
-      >
+    <html
+      lang="en"
+      className={`${fraunces.variable} ${plusJakarta.variable} h-full antialiased`}
+    >
+      <body className="min-h-full font-sans text-slate-900 bg-[#EEF2F6] selection:bg-amber-200 selection:text-slate-900">
         {children}
       </body>
     </html>
