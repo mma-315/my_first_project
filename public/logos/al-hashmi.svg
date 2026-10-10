@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hashmiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+    <linearGradient id="goldLeaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Circle with Gold Crest Border -->
+  <circle cx="50" cy="50" r="48" fill="url(#hashmiBg)" stroke="#fde047" stroke-width="3"/>
+  <circle cx="50" cy="50" r="43" fill="none" stroke="#a7f3d0" stroke-width="1" stroke-dasharray="2 2" opacity="0.7"/>
+
+  <!-- Olive Branch Wreath Left -->
+  <path d="M 23 58 C 21 44 26 31 35 24 C 33 29 32 37 34 45 C 32 40 31 34 32 28" fill="none" stroke="url(#goldLeaf)" stroke-width="2" stroke-linecap="round"/>
+  <!-- Left Leaves -->
+  <path d="M 23 50 C 18 48 19 43 25 45 C 26 48 24 51 23 50 Z" fill="#fef08a"/>
+  <path d="M 26 38 C 21 34 23 30 29 33 C 29 36 28 39 26 38 Z" fill="#fde047"/>
+  <path d="M 33 28 C 30 23 34 20 38 24 C 37 27 35 29 33 28 Z" fill="#fef08a"/>
+
+  <!-- Olive Branch Wreath Right -->
+  <path d="M 77 58 C 79 44 74 31 65 24 C 67 29 68 37 66 45 C 68 40 69 34 68 28" fill="none" stroke="url(#goldLeaf)" stroke-width="2" stroke-linecap="round"/>
+  <!-- Right Leaves -->
+  <path d="M 77 50 C 82 48 81 43 75 45 C 74 48 76 51 77 50 Z" fill="#fef08a"/>
+  <path d="M 74 38 C 79 34 77 30 71 33 C 71 36 72 39 74 38 Z" fill="#fde047"/>
+  <path d="M 67 28 C 70 23 66 20 62 24 C 63 27 65 29 67 28 Z" fill="#fef08a"/>
+
+  <!-- Central Crest Motif: Traditional Handi / Cooking Pot / Star -->
+  <polygon points="50,21 52.5,27 58,27.5 53.5,31 55,36.5 50,33 45,36.5 46.5,31 42,27.5 47.5,27" fill="#fde047"/>
+
+  <!-- Monogram AH in Heraldic Shield -->
+  <path d="M 36 40 L 64 40 C 64 53 58 63 50 67 C 42 63 36 53 36 40 Z" fill="#065f46" stroke="#fde047" stroke-width="1.8"/>
+  <text x="50" y="56" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="1">AH</text>
+
+  <!-- Typography at bottom -->
+  <text x="50" y="80" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" font-weight="900" fill="#fef08a" text-anchor="middle" letter-spacing="1">AL-HASHMI</text>
+  <text x="50" y="89" font-family="system-ui, -apple-system, sans-serif" font-size="6" font-weight="700" fill="#a7f3d0" text-anchor="middle" letter-spacing="1.5">KITCHEN</text>
+</svg>
